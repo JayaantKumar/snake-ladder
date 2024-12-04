@@ -1,0 +1,32 @@
+/* src/Dice.css */
+
+.dice-face {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.dice-1 .dot:nth-child(5),
+.dice-2 .dot:nth-child(1),
+.dice-2 .dot:nth-child(9),
+.dice-3 .dot:nth-child(1),
+.dice-3 .dot:nth-child(5),
+.dice-3 .dot:nth-child(9),
+.dice-4 .dot:nth-child(1),
+.dice-4 .dot:nth-child(3),
+.dice-4 .dot:nth-child(7),
+.dice-4 .dot:nth-child(9),
+.dice-5 .dot:nth-child(1),
+.dice-5 .dot:nth-child(3),
+.dice-5 .dot:nth-child(5),
+.dice-5 .dot:nth-child(7),
+.dice-5 .dot:nth-child(9),
+.dice-6 .dot:nth-child(1),
+.dice-6 .dot:nth-child(3),
+.dice-6 .dot:nth-child(4),
+.dice-6 .dot:nth-child(6),
+.dice-6 .dot:nth-child(7),
+.dice-6 .dot:nth-child(9) {
+  background-color: #0044cc;
+}

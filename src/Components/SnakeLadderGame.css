@@ -1,0 +1,172 @@
+/* src/SnakeLadderGame.css */
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.board-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.board-tile {
+    background-color: #ffefd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    position: relative;
+    color: #333;
+    font-weight: bold;
+}
+
+.player-tile {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.roll-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.roll-button:hover {
+    background-color: #0033aa;
+}
+
+.question {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #0044cc;
+    text-align: center;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+/* Dice CSS */
+.dice {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dice-face {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #0044cc;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .board-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .board-tile {
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .roll-button {
+        font-size: 1.2em;
+    }
+
+    .dice {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    .question {
+        font-size: 1em;
+    }
+
+    .points-display {
+        margin-top: 20px;
+        font-size: 1.5em;
+        color: #228b22;
+        font-weight: bold;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .board-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .board-tile {
+        height: 35px;
+        font-size: 0.9em;
+    }
+
+    .roll-button {
+        font-size: 1em;
+    }
+
+    .dice {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .question {
+        font-size: 0.9em;
+    }
+}
